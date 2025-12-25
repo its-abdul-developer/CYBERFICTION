@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: boldd;
+    src: url(/public/fonts/bold.otf);
+}
+@font-face {
+    font-family: blackk;
+    src: url(/public/fonts/black.otf);
+}
+@font-face {
+    font-family: heavy;
+    src: url(/public/fonts/heavy.otf);
+}
+@font-face {
+    font-family: lightt;
+    src: url(/public/fonts/light.otf);
+}
+@font-face {
+    font-family: mediumm;
+    src: url(/public/fonts/medium.otf);
+}
+@font-face {
+    font-family: regular;
+    src: url(/public/fonts/regular.otf);
+}
+@font-face {
+    font-family: semibold;
+    src: url(/public/fonts/semibold.otf);
+}
+@font-face {
+    font-family: thinn;
+    src: url(/public/fonts/thin.otf);
+}
+@font-face {
+    font-family: ultralight;
+    src: url(/public/fonts/ultralight.otf);
+}
+
+html,body{
+  margin:0;
+  padding:0;
+}
+
+.canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index:5;
+}
+
+.panel{
+  height:120vh;   /* NOT h-screen */
+}
+#loop{
+  
+    font-family: gilroy;
+}
+#loop>h1{
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+

@@ -98,7 +98,7 @@ export default function App() {
     });
 
     // ----- PIN PAGES -----
-    ["#page1", "#page2", "#page3", "#page4", "#page5", "#page6"].forEach((id) => {
+    ["#page1", "#page2", "#page3", "#page4"].forEach((id) => {
       ScrollTrigger.create({
         trigger: id,
         scroller: scrollRef.current,
@@ -201,40 +201,7 @@ export default function App() {
               </h1>
             </div>
           </section>
-          <section id="page5" className="min-h-[100vh] bg-[#F1F1F1] flex ">
-            <div className="w-1/2 "></div>
-            <div className="w-1/2 h-full   flex flex-col pr-28 text-right">
-              <h3 className="text-[2vh]  leading-[1.4] font-[gilroy] mt-[25vw]  text-zinc-500">
-                CYBERFICTION / PLAYGROUND
-              </h3>
-              <h1 className="text-[3vw] leading-[1.5] font-[gilroy]  text-black font-bold ">
-                ABDUL
-              </h1>
-              <h1 className="text-[3vw]  leading-[1.5] font-[gilroy] text-black font-bold">
-                WAHAB
-              </h1>
-              <h1 className="text-[3vw]  leading-[1.5] font-[gilroy] text-black font-bold">
-               CHEEMA
-              </h1>
-            </div>
-          </section>
-          <section id="page6" className="min-h-[100vh] bg-[#F1F1F1] flex ">
-            <div className="w-1/2 "></div>
-            <div className="w-1/2 h-full   flex flex-col pr-28 text-right">
-              <h3 className="text-[2vh]  leading-[1.4] font-[gilroy] mt-[25vw]  text-zinc-500">
-                CYBERFICTION / PLAYGROUND
-              </h3>
-              <h1 className="text-[3vw] leading-[1.5] font-[gilroy]  text-black font-bold ">
-               ADEEL
-              </h1>
-              <h1 className="text-[3vw]  leading-[1.5] font-[gilroy] text-black font-bold">
-                QASIM
-              </h1>
-              <h1 className="text-[3vw]  leading-[1.5] font-[gilroy] text-black font-bold">
-                CHEEMA
-              </h1>
-            </div>
-          </section>
+         
         </div>
       </div>
     </>
